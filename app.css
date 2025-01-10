@@ -94,3 +94,93 @@ body {
         display: block;
     }
 }
+
+/*                                      Estilos de 
+                                        Clase2                                                  */
+
+.emailContainer {
+    justify-items: center;
+}
+
+.emailImage {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.emailImage img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+/*                                      Estilos de 
+                                        Clase3                                                  */
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
+
+.inputEmail {
+    margin-bottom: 20px;
+}
+
+.secondaryButton {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 48px;
+}
+
+/*                                      Estilos de 
+                                        Clase4                                                  */
+.inputName,
+.inputEmail,
+.inputPassword {
+    margin-bottom: 20px;
+}
+
+.titleAccount {
+    text-align: start;
+    margin-bottom: 36px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 640px) {
+    .formContainerAccount {
+        height: 100%;
+    }
+
+    .formAccount {
+        height: 100%;
+        justify-content: space-between;
+    }
+}
