@@ -27,6 +27,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+
 }
 
 .logo {
@@ -93,4 +94,39 @@ body {
     .logo {
         display: block;
     }
+}
+
+/*                                      Estilos de 
+                                        Clase2                                                  */
+
+.emailContainer {
+    justify-items: center;
+}
+
+.emailImage {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.emailImage img {
+    width: 80px;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
 }
