@@ -23,7 +23,7 @@ body {
     place-items: center;
 }
 
-.formContainer {
+.form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -72,7 +72,7 @@ body {
     margin-bottom: 12px;
 }
 
-.primaryButton {
+.primary-button {
     background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
@@ -84,7 +84,7 @@ body {
     height: 48px;
 }
 
-.loginButton {
+.login-button {
     margin-top: 12px;
     margin-bottom: 32px;
 }
@@ -98,11 +98,11 @@ body {
 /*                                      Estilos de 
                                         Clase2                                                  */
 
-.emailContainer {
+.email-container {
     justify-items: center;
 }
 
-.emailImage {
+.email-image {
     width: 132px;
     height: 132px;
     border-radius: 50%;
@@ -113,7 +113,7 @@ body {
     margin-bottom: 24px;
 }
 
-.emailImage img {
+.email-image img {
     width: 80px;
 }
 
@@ -140,11 +140,11 @@ body {
     margin-bottom: 52px;
 }
 
-.inputEmail {
+.input-email {
     margin-bottom: 20px;
 }
 
-.secondaryButton {
+.secondary-button {
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--hospital-green);
@@ -158,13 +158,13 @@ body {
 
 /*                                      Estilos de 
                                         Clase4                                                  */
-.inputName,
-.inputEmail,
-.inputPassword {
+.input-name,
+.input-email,
+.input-password {
     margin-bottom: 20px;
 }
 
-.titleAccount {
+.title-account {
     text-align: start;
     margin-bottom: 36px;
 }
@@ -175,11 +175,11 @@ body {
 }
 
 @media(max-width: 640px) {
-    .formContainerAccount {
+    .form-container-account {
         height: 100%;
     }
 
-    .formAccount {
+    .form-account {
         height: 100%;
         justify-content: space-between;
     }
@@ -195,48 +195,48 @@ body {
 
 /*                                      Estilos de 
                                         Clase6                                                  */
-.cardsContainer {
+.cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 28px;
     place-content: center;
 }
 
-.productCards {
+.product-cards {
     width: 240px;
 }
 
-.productCards img {
+.product-cards img {
     width: 100%;
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.productInfo {
+.product-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
 }
 
-.productInfo figure {
+.product-info figure {
     margin: 0;
 }
 
-.productInfo figure img {
+.product-info figure img {
     width: 36px;
     height: 36px;
 }
 
-.productInfo div p:nth-child(1) {
+.product-info div p:nth-child(1) {
     font-weight: bold;
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
 }
 
-.productInfo div p:nth-child(2) {
+.product-info div p:nth-child(2) {
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 0;
@@ -244,15 +244,15 @@ body {
 }
 
 @media (max-width: 640px) {
-    .cardsContainer {
+    .cards-container {
         grid-template-columns: repeat(auto-fill, 140px);
     }
 
-    .productCards {
+    .product-cards {
         width: 140px;
     }
 
-    .productCards img {
+    .product-cards img {
         width: 140px;
         height: 140px;
     }
@@ -260,7 +260,7 @@ body {
 
 /*                                      Estilos de 
                                         Clase7                                                  */
-.desktopMenu {
+.desktop-menu {
     width: 100px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -268,34 +268,75 @@ body {
     padding: 20px 20px 0 20px;
 }
 
-.desktopMenu ul {
+.desktop-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.desktopMenu ul li {
+.desktop-menu ul li {
     text-align: end;
 }
 
-.desktopMenu ul li:nth-child(1),
-.desktopMenu ul li:nth-child(2) {
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
     font-weight: bold;
 }
 
-.desktopMenu ul li:last-child {
+.desktop-menu ul li:last-child {
     padding-top: 20px;
     border-top: 1px solid var(--very-light-pink);
 }
 
-.desktopMenu ul li:last-child a {
+.desktop-menu ul li:last-child a {
     color: var(--hospital-green);
     font-size: var(--sm);
 }
 
-.desktopMenu ul li a {
+.desktop-menu ul li a {
     text-decoration: none;
     color: var(--black);
     margin-bottom: 20px;
     display: inline-block;
+}
+
+/*                                      Estilos de 
+                                        Clase8                                                  */
+.mobile-menu {
+    padding: 24px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul:last-child {
+    position: absolute;
+    bottom: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.mobile-menu .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green);
 }
