@@ -257,3 +257,45 @@ body {
         height: 140px;
     }
 }
+
+/*                                      Estilos de 
+                                        Clase7                                                  */
+.desktopMenu {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+
+.desktopMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktopMenu ul li {
+    text-align: end;
+}
+
+.desktopMenu ul li:nth-child(1),
+.desktopMenu ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+.desktopMenu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktopMenu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktopMenu ul li a {
+    text-decoration: none;
+    color: var(--black);
+    margin-bottom: 20px;
+    display: inline-block;
+}
