@@ -23,7 +23,7 @@ body {
     place-items: center;
 }
 
-.formContainer {
+.form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -72,7 +72,7 @@ body {
     margin-bottom: 12px;
 }
 
-.primaryButton {
+.primary-button {
     background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
@@ -84,7 +84,7 @@ body {
     height: 48px;
 }
 
-.loginButton {
+.login-button {
     margin-top: 12px;
     margin-bottom: 32px;
 }
@@ -98,11 +98,11 @@ body {
 /*                                      Estilos de 
                                         Clase2                                                  */
 
-.emailContainer {
+.email-container {
     justify-items: center;
 }
 
-.emailImage {
+.email-image {
     width: 132px;
     height: 132px;
     border-radius: 50%;
@@ -113,7 +113,7 @@ body {
     margin-bottom: 24px;
 }
 
-.emailImage img {
+.email-image img {
     width: 80px;
 }
 
@@ -140,11 +140,11 @@ body {
     margin-bottom: 52px;
 }
 
-.inputEmail {
+.input-email {
     margin-bottom: 20px;
 }
 
-.secondaryButton {
+.secondary-button {
     background-color: var(--white);
     border-radius: 8px;
     border: 1px solid var(--hospital-green);
@@ -158,13 +158,13 @@ body {
 
 /*                                      Estilos de 
                                         Clase4                                                  */
-.inputName,
-.inputEmail,
-.inputPassword {
+.input-name,
+.input-email,
+.input-password {
     margin-bottom: 20px;
 }
 
-.titleAccount {
+.title-account {
     text-align: start;
     margin-bottom: 36px;
 }
@@ -175,12 +175,253 @@ body {
 }
 
 @media(max-width: 640px) {
-    .formContainerAccount {
+    .form-container-account {
         height: 100%;
     }
 
-    .formAccount {
+    .form-account {
         height: 100%;
         justify-content: space-between;
     }
+}
+
+/*                                      Estilos de 
+                                        Clase5                                                  */
+.value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+/*                                      Estilos de 
+                                        Clase6                                                  */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 28px;
+    place-content: center;
+}
+
+.product-cards {
+    width: 240px;
+}
+
+.product-cards img {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-info figure {
+    margin: 0;
+}
+
+.product-info figure img {
+    width: 36px;
+    height: 36px;
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
+@media (max-width: 640px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    .product-cards {
+        width: 140px;
+    }
+
+    .product-cards img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/*                                      Estilos de 
+                                        Clase7                                                  */
+.desktop-menu {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+}
+
+.desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-menu ul li {
+    text-align: end;
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+.desktop-menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: var(--black);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/*                                      Estilos de 
+                                        Clase8                                                  */
+.mobile-menu {
+    padding: 24px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul:last-child {
+    position: absolute;
+    bottom: 0;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.mobile-menu .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+
+/*                                      Estilos de 
+                                        Clase9                                                  */
+.my-order {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.my-order-container .title {
+    font-size: var(--lg);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.my-order-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.my-order-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.order p span:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.shopping-cart figure {
+    margin: 0;
+}
+
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+
+.shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
 }
