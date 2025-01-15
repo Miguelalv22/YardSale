@@ -597,3 +597,24 @@ nav {
         width: 100%;
     }
 }
+
+/*                                      Estilos de 
+                                        Clase13                                                  */
+.title-container {
+    display: flex;
+}
+
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+
+.title-container .title {
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.product-detail-shopping-cart {
+    padding: 24px;
+    box-sizing: border-box;
+}
